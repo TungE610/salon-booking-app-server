@@ -4,7 +4,7 @@ const client = require('twilio')('AC0c584cb20b76918a58e02801640db088', '19454ea2
 
 const port = 3000;
 
-app.get('/', (req, res) => {
+app.get('/login', (req, res) => {
 	sendTextMessage();
 	res.send(`
 		<div style="padding-top: 40px">
